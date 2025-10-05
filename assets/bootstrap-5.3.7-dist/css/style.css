@@ -1,0 +1,357 @@
+/* style.css */
+body {
+  font-family: "Noto Sans Thai", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.topbar {
+  background-color: #010001;
+  font-size: 0.85rem;
+}
+
+.shop-hover {
+  transition: color 0.3s;
+}
+.shop-hover:hover {
+  color: red !important;
+}
+
+.footer-hover {
+  transition: color 0.3s;
+}
+.footer-hover:hover {
+  color: white !important;
+}
+
+.transition-navbar {
+  transition: all 0.3s ease;
+}
+.navbar-scrolled {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding-top: 0.3rem !important;
+  padding-bottom: 0.3rem !important;
+}
+
+.nav-icon {
+  width: 44px;
+  height: 44px;
+  background-color: #f6f6f6;
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.nav-icon:hover {
+  background-color: #e2e2e2;
+}
+.nav-icon i {
+  font-size: 18px;
+}
+
+.nav-link-custom {
+  font-size: 0.9rem;
+  color: #333;
+}
+.nav-link-custom.active {
+  color: red;
+  font-weight: bold;
+}
+
+.search-box {
+  max-width: 500px;
+  width: 100%;
+}
+.search-box input {
+  height: 42px;
+  border-radius: 2rem;
+}
+.search-box:focus-within {
+  border-color: #dc3545 !important;
+  box-shadow: 0 0 0 0.1rem rgba(220, 53, 69, 0.25);
+}
+
+.input-group-text {
+  background-color: transparent;
+  border: none;
+}
+
+.fixed-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.brand-wrapper {
+  width: 1760px;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: transparent;
+}
+.brand-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.brand-logo {
+  flex: 0 0 220px;
+  height: 60px;
+  object-fit: contain;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.btn-chat {
+  background-color: #d9001b;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+.btn-chat:hover {
+  background-color: #b80017;
+  color: #fff;
+}
+
+.card-img-top {
+  transition: transform 0.3s ease;
+}
+.card-body p {
+  font-size: 13px;
+  line-height: 1.4;
+}
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.brand-list img {
+  width: auto;
+  height: 18px;
+}
+.brand-list li span {
+  font-size: 13px;
+}
+
+.badge {
+  font-size: 12px;
+  border-radius: 8px;
+}
+.card .text-danger {
+  font-size: 15px;
+}
+
+.custom-card {
+  border: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.custom-card:hover {
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+}
+
+.img-hover-dim {
+  transition: filter 0.3s ease;
+}
+.img-hover-dim:hover {
+  filter: brightness(75%);
+}
+
+.category-box {
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+.category-box:hover {
+  background-color: #f8f9fa;
+  border-color: #d91f26;
+  transform: translateY(-3px);
+  box-shadow: 0 0.5rem 1rem rgba(217, 31, 38, 0.1);
+  color: #d91f26;
+}
+
+.promo-banner {
+  border-radius: 20px;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  max-width: 100%;
+  height: 300px;
+  cursor: pointer;
+  object-fit: cover;
+}
+.promo-banner:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.truncate-2-lines {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.truncate-2-lines p {
+  margin-bottom: 0.5rem;
+}
+
+#categoryMenuButton {
+  background-color: #f8fbfd;
+  border: none !important;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #1d273b;
+  box-shadow: none;
+  padding: 8px 16px;
+}
+#categoryMenuButton i {
+  color: #2d3648;
+  font-size: 16px;
+}
+#categoryMenuButton:hover {
+  background-color: #e7f1f8;
+}
+
+.dropdown-menu {
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 14px;
+}
+.dropdown-item {
+  color: #1f2937;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+.dropdown-item i {
+  width: 20px;
+  text-align: center;
+  color: #374151;
+}
+.dropdown-item:hover {
+  background-color: #f3f4f6;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid #fff;
+  margin: 0 4px;
+  opacity: 1;
+  transition: background-color 0.3s;
+}
+.carousel-indicators .active {
+  background-color: #fff;
+}
+
+.cookie-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  max-width: 320px;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  z-index: 1000;
+  display: none;
+}
+
+.best-seller-wrapper {
+  overflow-x: hidden;
+  padding-inline: 1rem;
+}
+
+.best-seller-track {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-bottom: 10px;
+  margin-inline: auto;
+  max-width: 100%;
+}
+
+/* มือถือ */
+@media (max-width: 768px) {
+  #mainNavbar {
+    position: static !important;
+    top: auto !important;
+    z-index: auto !important;
+  }
+
+  .mobile-topbar {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .mobile-topbar img {
+    height: 28px;
+  }
+
+  .mobile-topbar a {
+    font-size: 13px;
+  }
+
+  .mobile-search {
+    padding: 10px 15px;
+    background-color: #fff;
+  }
+
+  .mobile-search .search-box {
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  .mobile-search input {
+    font-size: 14px;
+    color: #333;
+  }
+
+  .mobile-search .input-group-text {
+    background-color: #fff;
+    border: none;
+  }
+
+  .best-seller-wrapper {
+    padding-inline: 0.5rem;
+  }
+
+  .best-seller-track {
+    overflow-x: auto !important;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+  }
+
+  .best-seller-card {
+    flex: 0 0 85%;
+    scroll-snap-align: start;
+    max-width: 85%;
+  }
+  
+}
+
+/* หน้าจอ PC */
+@media (min-width: 769px) {
+  .best-seller-track {
+    overflow-x: visible !important;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .best-seller-card {
+    flex: 0 0 calc(33.333% - 1rem);
+    max-width: calc(33.333% - 1rem);
+  }
+}
+
